@@ -7,8 +7,14 @@ Download OpenCV installer at OpenCV site. For example this tutorial use `OpenCV 
 Run the installer and select the path to extract. This tutorial use `C:\opencv_3.4.10`. After installation:
 ![alt text](https://github.com/AsyrafZulkhairi/tutorial/blob/master/installOpenCVforVS/pathOpenCV.PNG "pathOpenCV.PNG")
 
-Add OpenCV's `bin` directory to path. The path depends on extract path previously. For example:
-![alt text](https://github.com/AsyrafZulkhairi/tutorial/blob/master/installOpenCVforVS/editEnvironmentVariable.PNG "editEnvironmentVariable.PNG")
+Add OpenCV's `bin` directory to path. Go to `System Properties > Advanced > Environment Variables...`:
+![alt text](https://github.com/AsyrafZulkhairi/tutorial/blob/master/installOpenCVforVS/editEnvironmentVariables.PNG "editEnvironmentVariables.PNG")
+Then edit 'Path':
+![alt text](https://github.com/AsyrafZulkhairi/tutorial/blob/master/installOpenCVforVS/editSystemVariables.png "editSystemVariables.png")
+Add OpenCV's 'bin' directory. The path depends on extract path previously. For example:
+![alt text](https://github.com/AsyrafZulkhairi/tutorial/blob/master/installOpenCVforVS/addOpenCVPath.PNG "addOpenCVPath.PNG")
+
+
 
 ## Setting in Visual Studio
 Open a project you want to add OpenCV, then go to project setting:
@@ -27,6 +33,8 @@ Then go to `Configuration Properties > Linker > Input`, edit `Additional Depende
 ![alt text](https://github.com/AsyrafZulkhairi/tutorial/blob/master/installOpenCVforVS/linkerInput.PNG "linkerInput.PNG")
 
 That's it. Choose 'apply' to close.
+
+
 
 ## Testing
 Done. To test, try type in your code `#include <open`, suggestions will pop-up indicates OpenCV is ready:
